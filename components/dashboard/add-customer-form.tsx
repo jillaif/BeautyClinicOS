@@ -29,19 +29,30 @@ export function AddCustomerForm() {
       <CardHeader>
         <CardTitle>Add Customer</CardTitle>
       </CardHeader>
-      <CardContent className="grid gap-4 md:grid-cols-2">
-        <div className="space-y-2">
+      <CardContent className="grid items-start gap-x-6 gap-y-7 md:grid-cols-2">
+        <div className="grid min-h-[104px] content-start gap-3">
           <Label>Name</Label>
-          <Input value={form.name} onChange={(event) => update("name", event.target.value)} placeholder="Customer name" />
+          <Input
+            value={form.name}
+            onChange={(event) => update("name", event.target.value)}
+            placeholder="Customer name"
+            className="h-14"
+          />
         </div>
-        <div className="space-y-2">
+        <div className="grid min-h-[104px] content-start gap-3">
           <Label>Age</Label>
-          <Input value={form.age} onChange={(event) => update("age", event.target.value)} type="number" />
+          <Input
+            value={form.age}
+            onChange={(event) => update("age", event.target.value)}
+            type="number"
+            inputMode="numeric"
+            className="h-14"
+          />
         </div>
-        <div className="space-y-2">
+        <div className="grid min-h-[104px] content-start gap-3">
           <Label>Gender</Label>
           <Select value={form.gender} onValueChange={(value) => update("gender", value)}>
-            <SelectTrigger>
+            <SelectTrigger className="h-14">
               <SelectValue placeholder="Select gender" />
             </SelectTrigger>
             <SelectContent>
@@ -52,10 +63,10 @@ export function AddCustomerForm() {
             </SelectContent>
           </Select>
         </div>
-        <div className="space-y-2">
+        <div className="grid min-h-[104px] content-start gap-3">
           <Label>Skin Type</Label>
           <Select defaultValue={form.skinType} onValueChange={(value) => update("skinType", value)}>
-            <SelectTrigger>
+            <SelectTrigger className="h-14">
               <SelectValue placeholder="Select skin type" />
             </SelectTrigger>
             <SelectContent>
@@ -67,20 +78,25 @@ export function AddCustomerForm() {
             </SelectContent>
           </Select>
         </div>
-        <div className="space-y-2 md:col-span-2">
+        <div className="grid content-start gap-3 md:col-span-2">
           <Label>Main Concern</Label>
           <Input
             value={form.mainConcern}
             onChange={(event) => update("mainConcern", event.target.value)}
             placeholder="Acne, pigmentation, anti-aging..."
+            className="h-14"
           />
         </div>
-        <div className="space-y-2 md:col-span-2">
+        <div className="grid content-start gap-3 md:col-span-2">
           <Label>Notes</Label>
-          <Textarea value={form.notes} onChange={(event) => update("notes", event.target.value)} />
+          <Textarea
+            value={form.notes}
+            onChange={(event) => update("notes", event.target.value)}
+            className="min-h-[200px] rounded-[30px]"
+          />
         </div>
         <Button
-          className="md:col-span-2"
+          className="mt-1 h-14 md:col-span-2"
           disabled={isPending || !form.name || !form.mainConcern}
           onClick={() =>
             startTransition(async () => {

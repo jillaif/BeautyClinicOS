@@ -90,21 +90,25 @@ async function readClinicData() {
     return readLocalFile();
   }
 
-  await ensureDatabase();
-  const sql = getSql();
-  const rows = await sql<{ payload: ClinicData }[]>`
-    select payload
-    from clinic_state
-    where id = ${CLINIC_STATE_ID}
-    limit 1
-  `;
+  try {
+    await ensureDatabase();
+    const sql = getSql();
+    const rows = await sql<{ payload: ClinicData }[]>`
+      select payload
+      from clinic_state
+      where id = ${CLINIC_STATE_ID}
+      limit 1
+    `;
 
-  const payload = rows[0]?.payload;
-  if (!payload) {
-    throw new Error("Clinic state row is missing");
+    const payload = rows[0]?.payload;
+    if (!payload) {
+      throw new Error("Clinic state row is missing");
+    }
+
+    return payload;
+  } catch {
+    return readLocalFile();
   }
-
-  return payload;
 }
 
 async function writeClinicData(data: ClinicData) {
@@ -113,16 +117,20 @@ async function writeClinicData(data: ClinicData) {
     return;
   }
 
-  await ensureDatabase();
-  const sql = getSql();
-  await sql`
-    insert into clinic_state (id, payload, updated_at)
-    values (${CLINIC_STATE_ID}, ${sql.json(data)}, now())
-    on conflict (id)
-    do update set
-      payload = excluded.payload,
-      updated_at = now()
-  `;
+  try {
+    await ensureDatabase();
+    const sql = getSql();
+    await sql`
+      insert into clinic_state (id, payload, updated_at)
+      values (${CLINIC_STATE_ID}, ${sql.json(data)}, now())
+      on conflict (id)
+      do update set
+        payload = excluded.payload,
+        updated_at = now()
+    `;
+  } catch {
+    await writeLocalFile(data);
+  }
 }
 
 export async function getClinicData() {
