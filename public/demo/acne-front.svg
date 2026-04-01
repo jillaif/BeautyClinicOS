@@ -1,0 +1,11 @@
+<svg width="900" height="1100" viewBox="0 0 900 1100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="1100" rx="48" fill="#F8EFE8"/>
+  <circle cx="450" cy="420" r="220" fill="#E6CBB2"/>
+  <rect x="248" y="680" width="404" height="228" rx="114" fill="#E1C4AA"/>
+  <circle cx="350" cy="410" r="14" fill="#D16E64"/>
+  <circle cx="320" cy="470" r="11" fill="#C96258"/>
+  <circle cx="580" cy="430" r="13" fill="#D16E64"/>
+  <circle cx="545" cy="492" r="10" fill="#C96258"/>
+  <circle cx="452" cy="520" r="12" fill="#C96258"/>
+  <text x="450" y="995" text-anchor="middle" fill="#7A6254" font-size="50" font-family="Arial">Acne Baseline</text>
+</svg>

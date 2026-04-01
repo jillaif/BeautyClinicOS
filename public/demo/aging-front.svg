@@ -1,0 +1,9 @@
+<svg width="900" height="1100" viewBox="0 0 900 1100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="1100" rx="48" fill="#F6EEE9"/>
+  <circle cx="450" cy="420" r="220" fill="#E5C9AE"/>
+  <rect x="248" y="680" width="404" height="228" rx="114" fill="#E0C2A7"/>
+  <path d="M320 405C355 385 405 380 450 390" stroke="#A07C64" stroke-width="7" stroke-linecap="round"/>
+  <path d="M450 390C495 380 545 385 580 405" stroke="#A07C64" stroke-width="7" stroke-linecap="round"/>
+  <path d="M330 525C400 555 500 555 570 525" stroke="#AF8C74" stroke-width="8" stroke-linecap="round"/>
+  <text x="450" y="995" text-anchor="middle" fill="#7A6254" font-size="50" font-family="Arial">Anti-Aging Baseline</text>
+</svg>

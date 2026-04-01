@@ -1,0 +1,7 @@
+<svg width="900" height="1100" viewBox="0 0 900 1100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="1100" rx="48" fill="#FBF3EC"/>
+  <path d="M340 228C450 246 546 334 566 470C584 594 549 739 437 810C346 868 241 819 210 736C183 666 185 562 212 472C238 385 276 301 340 228Z" fill="#E4C7AE"/>
+  <circle cx="402" cy="490" r="12" fill="#D26D63"/>
+  <circle cx="381" cy="554" r="10" fill="#D26D63"/>
+  <text x="450" y="995" text-anchor="middle" fill="#7A6254" font-size="50" font-family="Arial">Acne Right</text>
+</svg>

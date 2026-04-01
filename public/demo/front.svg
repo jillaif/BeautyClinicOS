@@ -1,0 +1,6 @@
+<svg width="900" height="1100" viewBox="0 0 900 1100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="1100" rx="48" fill="#F3E7DA"/>
+  <circle cx="450" cy="420" r="220" fill="#E0C4A8"/>
+  <rect x="250" y="680" width="400" height="230" rx="110" fill="#DFC6AF"/>
+  <text x="450" y="1000" text-anchor="middle" fill="#6A594E" font-size="52" font-family="Arial">Front Upload Placeholder</text>
+</svg>

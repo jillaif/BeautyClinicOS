@@ -1,0 +1,51 @@
+<svg width="1200" height="1200" viewBox="0 0 1200 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1200" rx="48" fill="#F7F1EA"/>
+  <rect x="0" y="0" width="1200" height="1200" fill="url(#bg2)"/>
+  <ellipse cx="600" cy="1088" rx="280" ry="146" fill="#E6DDD3"/>
+  <path d="M332 1096C382 970 484 892 600 892C716 892 818 970 868 1096H332Z" fill="#EBE1D6"/>
+  <path d="M262 394C286 228 417 94 600 94C783 94 914 228 938 394C903 324 842 271 768 241C694 212 601 202 507 225C420 247 336 306 262 394Z" fill="#2D231F"/>
+  <path d="M254 431C281 275 405 126 561 112C423 170 332 290 305 476C286 610 295 731 330 829C248 728 232 556 254 431Z" fill="#3A2C26"/>
+  <path d="M946 431C919 275 795 126 639 112C777 170 868 290 895 476C914 610 905 731 870 829C952 728 968 556 946 431Z" fill="#3A2C26"/>
+  <path d="M320 510C320 279 442 146 600 146C758 146 880 279 880 510V690C880 908 758 1054 600 1054C442 1054 320 908 320 690V510Z" fill="url(#skin2)"/>
+  <ellipse cx="602" cy="444" rx="188" ry="144" fill="url(#highlight2)" fill-opacity="0.32"/>
+  <ellipse cx="432" cy="718" rx="68" ry="45" fill="#DF9D8E" fill-opacity="0.16"/>
+  <ellipse cx="770" cy="716" rx="68" ry="45" fill="#DF9D8E" fill-opacity="0.16"/>
+  <path d="M416 528C457 500 516 498 560 520" stroke="#4C352D" stroke-width="16" stroke-linecap="round"/>
+  <path d="M640 520C684 498 743 500 784 528" stroke="#4C352D" stroke-width="16" stroke-linecap="round"/>
+  <path d="M431 582C462 563 508 563 541 582" stroke="#765849" stroke-width="9" stroke-linecap="round"/>
+  <path d="M659 582C692 563 738 563 769 582" stroke="#765849" stroke-width="9" stroke-linecap="round"/>
+  <ellipse cx="486" cy="592" rx="48" ry="30" fill="#FFFDFB"/>
+  <ellipse cx="714" cy="592" rx="48" ry="30" fill="#FFFDFB"/>
+  <ellipse cx="487" cy="595" rx="19" ry="21" fill="#402E25"/>
+  <ellipse cx="713" cy="595" rx="19" ry="21" fill="#402E25"/>
+  <circle cx="493" cy="588" r="5" fill="#FFFFFF" fill-opacity="0.9"/>
+  <circle cx="719" cy="588" r="5" fill="#FFFFFF" fill-opacity="0.9"/>
+  <path d="M601 616C583 684 575 748 600 759C625 748 617 684 601 616Z" fill="#DBB699"/>
+  <path d="M555 784C584 797 616 797 645 784" stroke="#BC7D78" stroke-width="9" stroke-linecap="round"/>
+  <path d="M492 829C560 864 640 864 708 829" stroke="#AD6A68" stroke-width="17" stroke-linecap="round"/>
+  <circle cx="423" cy="689" r="7" fill="#D98B7A" fill-opacity="0.78"/>
+  <circle cx="761" cy="690" r="7" fill="#D98B7A" fill-opacity="0.78"/>
+  <circle cx="603" cy="764" r="6" fill="#E4C2A6" fill-opacity="0.9"/>
+  <path d="M398 367C456 300 523 270 600 270C677 270 744 300 802 367" stroke="#3E2C26" stroke-width="22" stroke-linecap="round"/>
+  <path d="M349 457C385 353 468 254 600 240C732 254 815 353 851 457" stroke="#2D231F" stroke-width="18" stroke-linecap="round"/>
+  <ellipse cx="600" cy="466" rx="228" ry="160" fill="url(#glow2)" fill-opacity="0.26"/>
+  <text x="600" y="1142" text-anchor="middle" fill="#7B6456" font-size="40" font-family="Arial">Demo Portrait Sequence - Visit 2</text>
+  <defs>
+    <linearGradient id="bg2" x1="110" y1="110" x2="1078" y2="1100" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF9F5"/>
+      <stop offset="1" stop-color="#F2E9DF"/>
+    </linearGradient>
+    <radialGradient id="skin2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(596 438) rotate(90) scale(620 420)">
+      <stop stop-color="#F4DCC5"/>
+      <stop offset="1" stop-color="#E8C8AD"/>
+    </radialGradient>
+    <radialGradient id="highlight2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(610 418) rotate(90) scale(174 250)">
+      <stop stop-color="#FFF4DF"/>
+      <stop offset="1" stop-color="#FFF4DF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 466) rotate(90) scale(182 288)">
+      <stop stop-color="#FFF0C8"/>
+      <stop offset="1" stop-color="#FFF0C8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>

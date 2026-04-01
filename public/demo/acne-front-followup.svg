@@ -1,0 +1,8 @@
+<svg width="900" height="1100" viewBox="0 0 900 1100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="1100" rx="48" fill="#F8EFE8"/>
+  <circle cx="450" cy="420" r="220" fill="#E7CEB7"/>
+  <rect x="248" y="680" width="404" height="228" rx="114" fill="#E3CAB3"/>
+  <circle cx="352" cy="418" r="8" fill="#D9A297"/>
+  <circle cx="575" cy="434" r="8" fill="#D9A297"/>
+  <text x="450" y="995" text-anchor="middle" fill="#7A6254" font-size="50" font-family="Arial">Acne Follow-Up</text>
+</svg>

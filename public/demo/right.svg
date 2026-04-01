@@ -1,0 +1,5 @@
+<svg width="900" height="1100" viewBox="0 0 900 1100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="1100" rx="48" fill="#F5EEE8"/>
+  <path d="M340 225C450 245 545 335 570 470C594 603 548 742 440 812C355 866 248 828 209 737C177 661 176 562 200 469C223 380 269 303 340 225Z" fill="#E2C6AD"/>
+  <text x="450" y="1000" text-anchor="middle" fill="#6A594E" font-size="52" font-family="Arial">Right Upload Placeholder</text>
+</svg>
