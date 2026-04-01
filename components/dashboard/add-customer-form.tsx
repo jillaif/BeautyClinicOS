@@ -23,72 +23,80 @@ export function AddCustomerForm() {
   });
 
   const update = (key: string, value: string) => setForm((current) => ({ ...current, [key]: value }));
+  const fieldClassName = "h-14 rounded-[28px] px-5 text-[15px]";
 
   return (
     <Card className="bg-white/92">
       <CardHeader>
         <CardTitle>Add Customer</CardTitle>
       </CardHeader>
-      <CardContent className="grid items-start gap-x-6 gap-y-7 md:grid-cols-2">
-        <div className="grid min-h-[104px] content-start gap-3">
-          <Label>Name</Label>
-          <Input
-            value={form.name}
-            onChange={(event) => update("name", event.target.value)}
-            placeholder="Customer name"
-            className="h-14"
-          />
+      <CardContent className="space-y-7">
+        <div className="grid gap-6 md:grid-cols-2">
+          <div className="grid content-start gap-3">
+            <Label className="min-h-7 text-base leading-none">Name</Label>
+            <Input
+              value={form.name}
+              onChange={(event) => update("name", event.target.value)}
+              placeholder="Customer name"
+              className={fieldClassName}
+            />
+          </div>
+          <div className="grid content-start gap-3">
+            <Label className="min-h-7 text-base leading-none">Age</Label>
+            <Input
+              value={form.age}
+              onChange={(event) => update("age", event.target.value)}
+              type="number"
+              inputMode="numeric"
+              className={fieldClassName}
+            />
+          </div>
         </div>
-        <div className="grid min-h-[104px] content-start gap-3">
-          <Label>Age</Label>
-          <Input
-            value={form.age}
-            onChange={(event) => update("age", event.target.value)}
-            type="number"
-            inputMode="numeric"
-            className="h-14"
-          />
+
+        <div className="grid gap-6 md:grid-cols-2">
+          <div className="grid content-start gap-3">
+            <Label className="min-h-7 text-base leading-none">Gender</Label>
+            <Select value={form.gender} onValueChange={(value) => update("gender", value)}>
+              <SelectTrigger className={fieldClassName}>
+                <SelectValue placeholder="Select gender" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="Female">Female</SelectItem>
+                <SelectItem value="Male">Male</SelectItem>
+                <SelectItem value="Non-binary">Non-binary</SelectItem>
+                <SelectItem value="Prefer not to say">Prefer not to say</SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
+          <div className="grid content-start gap-3">
+            <Label className="min-h-7 text-base leading-none">Skin Type</Label>
+            <Select value={form.skinType} onValueChange={(value) => update("skinType", value)}>
+              <SelectTrigger className={fieldClassName}>
+                <SelectValue placeholder="Select skin type" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="Oily">Oily</SelectItem>
+                <SelectItem value="Dry">Dry</SelectItem>
+                <SelectItem value="Combination">Combination</SelectItem>
+                <SelectItem value="Sensitive">Sensitive</SelectItem>
+                <SelectItem value="Normal">Normal</SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
         </div>
-        <div className="grid min-h-[104px] content-start gap-3">
-          <Label>Gender</Label>
-          <Select value={form.gender} onValueChange={(value) => update("gender", value)}>
-            <SelectTrigger className="h-14">
-              <SelectValue placeholder="Select gender" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="Female">Female</SelectItem>
-              <SelectItem value="Male">Male</SelectItem>
-              <SelectItem value="Non-binary">Non-binary</SelectItem>
-              <SelectItem value="Prefer not to say">Prefer not to say</SelectItem>
-            </SelectContent>
-          </Select>
-        </div>
-        <div className="grid min-h-[104px] content-start gap-3">
-          <Label>Skin Type</Label>
-          <Select defaultValue={form.skinType} onValueChange={(value) => update("skinType", value)}>
-            <SelectTrigger className="h-14">
-              <SelectValue placeholder="Select skin type" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="Oily">Oily</SelectItem>
-              <SelectItem value="Dry">Dry</SelectItem>
-              <SelectItem value="Combination">Combination</SelectItem>
-              <SelectItem value="Sensitive">Sensitive</SelectItem>
-              <SelectItem value="Normal">Normal</SelectItem>
-            </SelectContent>
-          </Select>
-        </div>
-        <div className="grid content-start gap-3 md:col-span-2">
-          <Label>Main Concern</Label>
+
+        <div className="grid content-start gap-3">
+          <Label className="min-h-7 text-base leading-none">Main Concern</Label>
           <Input
             value={form.mainConcern}
             onChange={(event) => update("mainConcern", event.target.value)}
             placeholder="Acne, pigmentation, anti-aging..."
-            className="h-14"
+            className={fieldClassName}
           />
         </div>
-        <div className="grid content-start gap-3 md:col-span-2">
-          <Label>Notes</Label>
+
+        <div className="grid content-start gap-3">
+          <Label className="min-h-7 text-base leading-none">Notes</Label>
           <Textarea
             value={form.notes}
             onChange={(event) => update("notes", event.target.value)}
@@ -96,7 +104,7 @@ export function AddCustomerForm() {
           />
         </div>
         <Button
-          className="mt-1 h-14 md:col-span-2"
+          className="mt-1 h-14 w-full"
           disabled={isPending || !form.name || !form.mainConcern}
           onClick={() =>
             startTransition(async () => {
